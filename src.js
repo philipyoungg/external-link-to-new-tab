@@ -1,10 +1,7 @@
 ((window, d) => {
-  const externalLinkToNewTab = config => {
-    if (typeof config === 'undefined' || typeof config.renderExternalIcon === 'undefined') {
-      config = { // eslint-disable-line
-        renderExternalIcon: true,
-      };
-    }
+  const externalLinkToNewTab = (config = {
+    renderExternalIcon: true,
+  }) => {
     [].forEach.call(d.querySelectorAll('a'), link => {
       if (link.hostname !== window.location.hostname) {
         link.setAttribute('target', '_blank');
