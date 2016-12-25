@@ -1,0 +1,21 @@
+{
+  "name": "externalLinkToNewTab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "externalLinkToNewTab.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --es2015 src/src.js | uglifyjs -m -c > externalLinkToNewTab.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipyoungg/external-link-to-new-tab.git"
+  },
+  "keywords": [],
+  "author": "Philip Young Gunawan <hello@philipyoungg.com> (http://www.philipyoungg.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philipyoungg/external-link-to-new-tab/issues"
+  },
+  "homepage": "https://github.com/philipyoungg/external-link-to-new-tab#readme"
+}
